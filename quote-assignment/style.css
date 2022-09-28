@@ -1,0 +1,30 @@
+/*
+MY COLOR PALETTE
+Tan - #DDD5D0
+Pink - #CFC0BD
+Dark Purple - #795663
+Orange - #CC5803
+Teal - #3BA99C
+*/
+
+body {
+    background-color:#DDD5D0;
+    text-align:center;
+}
+
+div {
+    width: 300px;
+    height: 300px;
+    text-align:center;
+    font-size:44px;
+    font-family: 'Courgette', cursive;
+    color:#795663;
+    border: 3px solid #CFC0BD;
+    padding: 60px 30px 10px 30px;
+    margin: auto;
+}
+
+#highlight {
+    color: #CC5803;
+    font-weight: bold;
+}
