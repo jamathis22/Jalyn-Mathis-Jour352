@@ -3,3 +3,73 @@
     color: black;
     padding: 10px 0px 10px 10px;
 }
+
+#navbarSupportedContent {
+    background-color: #F0EAE3;
+    color: black;
+    padding: 10px 0px 10px 10px
+}
+
+h1 { 
+font-size: 60px;
+    font-family: myanmar;
+}
+
+#title {
+    font-weight: bold;
+    font-family: myanmar;
+}
+
+#company {
+    font-family: myanmar;
+}
+
+#date {
+    font-family: myanmar;
+}
+
+#description {
+    font-family: myanmar;
+}
+
+#major {
+    font-family: myanmar;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: myanmar;
+}
+
+.btn btn-primary {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    border: none;
+    width: 200px
+}
+
+h3 {
+    font-family: myanmar;
+    font-size: 40px;
+}
+
+<style>
+
+.col-9 {
+    font-family: myanmar;
+    text-align: center;
+}
+</style> 
+
+<style>
+.bi {
+  font-size: 3em;
+}
+
+.col-4 {
+  text-align: center;
+    font-family: myanmar;
+}
+</style>
