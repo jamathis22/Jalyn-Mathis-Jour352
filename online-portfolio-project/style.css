@@ -1,64 +1,98 @@
-#footer {
-    background-color: #D6CABA;
-    color: black;
-    padding: 10px 0px 10px 10px;
+/*topper starts*/
+#headshot {
+    width:100%;
+    border-radius: 500px;
+    margin: 20px 0px 20px 20px;
 }
 
-#navbarSupportedContent {
+#button {
+    background-color:#F0EAE3;
+    border:0px;
+    border-radius: 10px;
+    padding:7px 40px 7px 40px;
+    text-transform:uppercase;
+    margin:10px;
+    font-family: 'Merriweather', serif;
+}
+
+#button a {
+    color:black;
+    text-decoration: none;
+}
+
+#button:hover {
+    background-color: #D1947F
+}
+/*topper ends */
+
+#footer {
     background-color: #F0EAE3;
     color: black;
-    padding: 10px 0px 10px 10px
+    padding: 10px 0px 10px 10px;
+    font-family: 'Merriweather', serif;
 }
+
+/* Navbar */
+.nav {
+    background-color: #F0EAE3;
+    color: black;
+    padding: 10px 420px 10px 20px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bold
+}
+
+.nav a {
+    color: black;
+}
+
+.nav a:hover {
+    color: #D1947F
+}
+/* navbar ends */
 
 h1 { 
 font-size: 60px;
-    font-family: myanmar;
+font-family: 'Merriweather', serif;
 }
 
 #title {
     font-weight: bold;
-    font-family: myanmar;
+    font-family: 'Merriweather', serif;
 }
 
 #company {
-    font-family: myanmar;
+    font-family: 'Merriweather', serif;
 }
 
 #date {
-    font-family: myanmar;
+    font-family: 'Merriweather', serif;
 }
 
 #description {
-    font-family: myanmar;
+    font-family: 'Merriweather', serif;
 }
 
 #major {
-    font-family: myanmar;
+    font-family: 'Merriweather', serif;
     font-weight: bold;
+    font-size: 20px
 }
 
 h2 {
-    font-size: 20px;
-    font-family: myanmar;
-}
-
-.btn btn-primary {
-    background-color: red;
-    color: white;
-    font-size: 30px;
-    border: none;
-    width: 200px
+    font-size: 25px;
+    font-family: 'Merriweather', serif;
 }
 
 h3 {
-    font-family: myanmar;
-    font-size: 40px;
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
 }
 
 <style>
 
 .col-9 {
-    font-family: myanmar;
+    font-family: 'Merriweather', serif;
     text-align: center;
 }
 </style> 
@@ -66,10 +100,42 @@ h3 {
 <style>
 .bi {
   font-size: 3em;
+    font-family: 'Merriweather', serif;
 }
 
 .col-4 {
-  text-align: center;
-    font-family: myanmar;
+    text-align: center;
+    font-family: 'Merriweather', serif;
 }
+
 </style>
+
+body {
+    background-color: #D6CABA;
+}
+
+.col-11 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+.withborder {
+    border: 3px solid black;
+    margin: 0px 10px 20px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.row {
+   font-family: 'Merriweather', serif; 
+}
+
+@media (min-width: 576px) {
+    /*Phone styles here*/
+  /*This media query targets any screen smaller than 576px wide (see below)*/
+   
+   footer {
+        background-color: #F0EAE3;
+            padding-left:100px
+      {
+}
