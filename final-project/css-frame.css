@@ -1,12 +1,16 @@
 @media {
     /*Phone styles here*/
     /*This media query targets any screen smaller than 576px wide (see below)*/
-    
+    h1 {
+        font-size: 50px
+    }
     .leadimage {
-        width:100%
+        width:100%;
     }
     
-}
+    #pullquote {
+        font-weight: bold
+    }
 
 @media (min-width: 576px) {
     /*Tablet-only styles here*/
@@ -23,6 +27,6 @@
     /*This media query targets any screen that is at least 1200px wide*/
 }
 
-font {
+body {
    font-family: 'Merriweather', serif;  
 }
