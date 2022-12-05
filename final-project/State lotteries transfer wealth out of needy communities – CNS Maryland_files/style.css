@@ -1,0 +1,399 @@
+/*
+	Theme Name: GoodLife Child
+	Theme URI: http://themeforest.net/user/fuelthemes
+	Description: <strong>GoodLife Magazine WordPress Theme by <a href="http://themeforest.net/user/fuelthemes?ref=fuelthemes">Fuel Themes</a></strong> – Update notifications available on Twitter and Themeforest <a href="http://twitter.com/anteksiler">Follow us on twitter</a> – <a href="http://themeforest.net/user/fuelthemes">Follow us on Themeforest</a>
+	Version: 1.0.0
+	Author: fuelthemes
+	Template: goodlife-wp
+*/
+
+@import url("../goodlife-wp/style.css");
+
+/* 
+Note: setting some style options via the theme admin interface 
+does not appear to be work so setting here (ATR)
+*/
+
+/************************************** 
+ Fonts
+ **************************************/
+
+/* 
+Note: default font set to Poppins in theme options so need to define 
+any other fonts not working in theme options here 
+*/
+
+.home .entry-content, .single-post .entry-content, .type-post .entry-content {
+	font-family: "Droid Serif";
+}
+
+/************************************** 
+ Header and Subheader 
+ **************************************/
+
+/* 
+Note: subheader shown when page is scrolled 
+*/
+
+.header {
+	background: #000;
+}
+
+.header .row, .subheader .row {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.header .quick_search, .subheader.fixed .quick_search {
+	height: 35px;
+	line-height: 35px;
+}
+
+.subheader.fixed .logo .logolink .logoimg {
+	max-height: 30px; 
+}
+
+@media only screen and (min-width: 40.063em) {
+	.header .row {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+}
+
+@media only screen and (min-width: 64.063em) {
+	.header .row {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.subheader.fixed .logo .logolink .logoimg {
+		max-height: 45px;
+	}
+}
+
+/************************************** 
+ Menus 
+ **************************************/
+
+/* hide social icons in mobile menu */
+/* TODO: need better way to hide social icons */
+.mobile-menu #menu-item-61038, .mobile-menu #menu-item-61040, .mobile-menu #menu-item-61374, .mobile-menu #menu-item-61375, .mobile-menu #menu-item-61055 {
+	display: none;
+}
+
+/************************************** 
+ Titles 
+ **************************************/
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: -0.04em;
+	font-weight: 600;
+}
+
+.post .post-title h1 { 
+	font-size: 24px; 
+}
+
+.page .post-title.page-title {
+	margin-top: 0;
+}
+
+@media only screen and (min-width: 48.063em) {
+.post .post-title h1 { 
+	font-size: 30px; 
+}
+
+.page .post-title.page-title {
+	margin-top: 30px;
+}
+}
+
+@media only screen and (min-width: 64.063em) {
+.post .post-title h1 { 
+	font-size: 38px; 
+}
+}
+
+/************************************** 
+ Misc Content
+ **************************************/
+
+/* hide breadcrumbs, turning off in admin interface did not work */
+.breadcrumb-container {
+	display: none;
+}
+
+/* 
+ * adjust byline formatting for authors and time published
+ * - make same font weight
+ * - position "by" in front of author name(s)
+ * - remove extra space on right of author names
+ * - tighten line-height when displayed on multiple lines
+ * - make larger on post pages
+ * - format differently if no author avatar
+ */
+
+.post .post-bottom-meta {
+	font-weight: 500;
+}
+
+article.post .post-bottom-meta {
+	font-size: 12px;
+}
+
+.post .post-bottom-meta .authortime {
+	line-height: 1.2em;
+	text-align: left;
+}
+
+.post .post-bottom-meta .authortime span, .post .post-title .post-bottom-meta .authortime span {
+	float: none;
+	text-align: left;
+	margin-right: 0;
+}
+
+.post .post-bottom-meta .authortime a, .post .post-title .post-bottom-meta .authortime a {
+	float: none;
+}
+
+.avatar-link.avatar-blank {
+	display: none;
+}
+
+/* 
+ * Author info
+ */
+
+.author-content.avatar-blank {
+	padding-left: 0;
+}
+
+.post .author-content h5 {
+	font-size: 0.9em;
+}
+
+.post .author-content p, .author-content .fa {
+	font-size: 0.8em;
+}
+
+@media only screen and (max-width: 40.063em) {
+	.post .post-author.no-author-text {
+		display: none;
+	}
+}
+
+.author .authorpage {
+	background: inherit;
+	padding: 0;
+}
+
+.author .post-author {
+	margin: 0;
+	border: none;
+	border-bottom: 1px dotted rgb(168, 168, 168);
+	padding-bottom: 1em;
+}
+
+.author .post-author h5 {
+	/* make same size as titles on news posts */
+	font-size: 38px;
+}
+
+.author .post-author p, .author .post-author .fa {
+	/* make text larger on author page */
+	font-size: 0.9em;
+}
+
+.author .post-author h5 a, .author .post-author p, .author .post-author a {
+	color: inherit;
+}
+
+.author .post-author span {
+	color: white;
+	background: #525252;
+	
+}
+
+.author .post-author a:hover {
+	color: #649fd6;
+}
+
+.post-gallery .post-author .avatar {
+	/* parent styles make the width of ".post .post-gallery img" 100% */
+	width: 86px;
+}
+
+/**********/
+
+/* no space between video container and following text in new version */
+.video-format-post .video-container {
+	margin-bottom: 20px;
+}
+
+/* match space below right sidebar and adds space between this and top of sidebar when show on narrow screen */
+div.share-article {
+	margin-bottom: 30px;
+}
+
+.share-title {
+	color: rgb(8, 8, 8);
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+/* keeps 16:9 aspect ratio for different screen sizes */
+.video-wrapper-16x9 {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 0px;
+	height: 0;
+}
+
+.video-wrapper-16x9 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/************************************** 
+ Footer
+ **************************************/
+
+/* decreased padding around subfooter */
+#subfooter .subfooter-menu-holder {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 40.063em) {
+	#subfooter .footer-menu li {
+		margin: 0 8px;
+	}
+}
+
+/************************************** 
+ Widgets
+ **************************************/
+
+.widget .widget_title {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.widget .widget_title>strong {
+	border-bottom: 2px solid #000;
+}
+
+/* 
+default post slider height is larger than previous versions
+changed to 40% to match previous height (was 50% in older app.css)
+*/
+.post.post-overlay.block-12 {
+	padding-bottom: 40%;
+}
+
+.about-cns-merrill-image img {
+	width: 100%;
+	max-height: 75px;
+}
+
+/************************************** 
+ Share Buttons
+ **************************************/
+.IN-widget {
+	/* was aligning bottom which made it to appear lower than other buttons */
+	vertical-align: top !important;
+}
+
+/************************************** 
+ Home Page Fixes
+ **************************************/
+
+/* social icons (in sidebar) were being shown vertically when window got too skinny */
+@media print, screen and (min-width: 767px) {
+	.thb-5, .medium-1\/5 {
+		-webkit-flex: 0 0 20%;
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+}
+
+/* show sidebar until social icon area under slider is displayed (vs_hidden-xs=false) */
+@media print, screen and (min-width: 767px) {
+	.medium-8, .small-12.medium-8X {
+		flex: 0 0 66.6667%;
+		max-width: 66.6667%;
+	}
+
+	.medium-4, .small-12.medium-4X {
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+}
+
+/************************************** 
+ Search
+ **************************************/
+
+/*.cns-homepage-widget*/
+.cns-homepage-widget .widget {
+	padding: 0;
+}
+
+.cns-homepage-widget .widget_search, .widget_search {
+	padding: 15px;
+}
+
+.category_title.search {
+	text-transform: none;
+}
+
+.category_title.search h1 {
+	margin-bottom: 0.1em;
+}
+
+h1 .remove-filter {
+	font-size: 16px;
+	font-weight: normal;
+	background: #f5f5f5;
+	padding: 0px 5px;
+}
+
+
+body:not(.search-results) .jetpack-search-sort-wrapper {
+	display: none !important;
+}
+
+.selected-filters {
+	margin-bottom: 0.5em;
+}
+
+.selected-filters span {
+	background: #f5f5f5;
+	padding: 2px 5px;
+	margin-right: 0.4em;
+	margin-bottom: 0.2em;
+}
+
+.selected-filters span a {
+	color: #525252;
+}
+
+.selected-filters span a:hover {
+	color: #649fd6;
+}
+
+/************************************** 
+ Print
+ **************************************/
+
+@media print {
+	.single .header, .single .sidebar, .single footer, .sharedaddy, .subheader, .hide-on-print { display: none !important; }
+	.single .post-detail-row .medium-8 { flex: 0 0 100%; max-width: 100%; }
+	a[href]:after { content: ""; }
+	.single a[href]:after { content: " (" attr(href) ")"; }
+}

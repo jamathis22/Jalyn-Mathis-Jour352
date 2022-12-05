@@ -1,17 +1,70 @@
 @media {
     /*Phone styles here*/
     /*This media query targets any screen smaller than 576px wide (see below)*/
-    h1 {
-        font-size: 50px
+    
+    body {
+   font-family: 'Merriweather', serif;
     }
+    
+    h1 {
+        font-size: 50px;
+         font-family: 'Archivo', sans-serif;
+    }
+    
+    h2 {
+        font-size: 12px
+    }
+    
+    h3 {
+        font-size: 15px
+    }
+    
+    h4 {
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Archivo', sans-serif;
+    }
+    
     .leadimage {
         width:100%;
     }
     
     #pullquote {
-        font-weight: bold
+        font-weight: bold;
+        padding: 10px 10px 10px 10px
+    }
+    .quoteline-top {
+        width: 100%;
+        color: red;
+    }
+   
+    .quoteline-bottom {
+        width: 50%;
+        color: red;
+    }
+    
+    li {
+        color: gray
+    }
+    
+    #dateline {
+        font-weight: bold;
+    }
+    
+    #leadcaption {
+        font-size: 13px
+    }
+    
+    #caption {
+        font-size: 10px
+    }
+    
+    #credit {
+        color: grey
     }
 
+    
+    
 @media (min-width: 576px) {
     /*Tablet-only styles here*/
     /*This media query targets any screen that is at least 576px wide (but smaller than 992px wide (see below)*/
@@ -25,8 +78,4 @@
 @media (min-width: 1200px) {
     /*Large-Desktop-only styles here*/
     /*This media query targets any screen that is at least 1200px wide*/
-}
-
-body {
-   font-family: 'Merriweather', serif;  
 }

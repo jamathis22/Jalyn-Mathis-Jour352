@@ -1,0 +1,674 @@
+/* 
+Also check style.css for custom styles (ATR)
+*/
+
+
+
+/* 
+Styles for board of ed pages, can delete*/
+.non-responsive-candidates {
+    font-size: 1.5em;
+    letter-spacing: -0.04em;
+    line-height: 1.4;
+    font-style:italic;
+}
+
+.non-responsive-candidates hr {
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+/* 
+read more teaser on stories*/
+
+.read-more {
+	border-top:1px solid #cdcdcd;
+	border-bottom:1px solid #cdcdcd;
+	font-family:poppins,sans-serif;
+	margin-top:15px;
+	margin-bottom:15px;
+	padding-top:15px;
+	padding-bottom:15px;
+	font-size:1.25em;
+}
+
+
+/* 
+Styles for Howard Center page
+*/
+
+
+.howard-stories h4.entry-title a {font-size:2em;}
+
+.howard-stories .post-category, .howard-stories .authortime {display:none;}
+
+.howard-center-hero .post-category {display:none;}
+
+/* 
+hide contributors w/ no avatars at bottom of stories, but do show on author page since used as title
+*/
+.author-content.avatar-blank {display:none;}
+.authorpage .author-content.avatar-blank {display:block;}
+
+/* 
+button styles
+*/
+
+.button-3 {
+  appearance: none;
+  background-color: #990000;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #990000;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #990000;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #990000;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+/* 
+pullquote and box styles
+*/
+
+.center {
+	text-align: center;
+}
+
+.box {
+    width:100%;
+     padding:10px;
+    font-family:poppins;
+    font-size:2em;
+		background-color: #ececec;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.box-sub {
+	font-size:.75em;
+	color:#000;
+	margin-top:-20px;
+	font-weight:normal;
+}
+
+.pullquote {
+    width:100%;
+    margin:25px;
+    padding:25px;
+    font-family:poppins;
+    font-size:1.75em;
+		border-top: 1px solid #999;
+		border-bottom: 1px solid #999;
+	font-weight:bold;
+}
+
+.pullquote-att {
+	font-size:.5em;
+	color:#000;
+}
+
+
+/* 
+Inset box styles
+*/
+
+
+.inset-box {
+    border:1px solid #cdcdcd;
+    width:100%;
+    margin:25px;
+    padding:25px;
+    font-family:poppins;
+    font-size:1em;
+}
+
+.inset-box-title {
+	font-size:1.5em;
+	text-align:center;
+	font-weight:bold;
+	border-bottom:1px solid #cdcdcd;
+	margin-bottom:15px;
+}
+
+.dark-red {
+    color:#990000;
+}
+
+
+
+/* 
+Adam Redesign 2020 styles start
+*/
+
+#election-image-homepage {
+	width:100%;
+	max-width: 350px;
+	padding-bottom:10px;
+}
+
+
+#election-image {
+	width:100%;
+	max-width: 700px;
+	margin:0 auto;
+}
+
+
+/* Homepage/Howard Center top slider nav arrows only */
+@media(min-width:600px) {
+
+.post-slider-style5 .slick-nav.slick-prev.slick-arrow, .post-slider-style5 .slick-nav.slick-next.slick-arrow  {
+    background: transparent;
+    color:#fff;
+   font-size: 5em;
+   font-weight: 700;
+}
+
+}
+
+/* Stack Post title size */
+h5.entry-title {
+	font-size:1.5em;
+}
+
+figure.post-gallery header.post-title.entry-header h5.entry-title{
+	font-size:1em;
+}
+
+.wp-caption-text {
+	font-size:1em;
+	font-family: 'poppins', sans-serif;
+}
+
+figure.post-gallery .post-bottom-meta {display:none;}
+
+a.more-link {
+text-transform: uppercase;
+font-size: .7em;
+font-weight: 600;
+}
+
+/* Stack Post title size for sliders */
+
+.gallery-offset-container .post-title.entry-header {
+	font-size:.75em;
+}
+
+
+/* Stack Post image size above 1k*/
+
+@media only screen and (min-width:1000px) {
+	.medium-4 {
+	max-width:25%;
+	}
+}
+
+
+
+
+
+/* Homepage top slider category */
+.post-gallery .entry-header  .small-12.medium-10.large-8.columns .single_category_title {
+	font-size:1.25em !important;
+	background:#000;
+	padding:5px;
+}
+
+/* Homepage top slider author */
+.post-title .small-12.medium-10.large-8.columns .post-bottom-meta .authortime  {
+	font-size:1.5em;
+	position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+	color:#000;
+}
+
+body p {
+	font-size:1.25em;
+}
+
+
+.post .post-content.small p {
+	font-size: 1.1em;
+}
+
+.post .post-category, .post.blog-post .single_category_title {
+	font-size:.7em;
+}
+
+.home .entry-content, .single-post .entry-content, .type-post .entry-content, .post-content.no-vc {
+	font-family:'Source Serif Pro', serif;
+}
+
+.post .post-bottom-meta {
+  color: #000;
+  font-size: .7em;
+}
+
+a.author.url.fn {
+	color: #990000;
+}
+
+.post .post-category a {
+	color: #990000;
+	font-size:1em;
+}
+
+.post.blog-post .single_category_title  {
+	color: #990000;
+}
+
+.post .single_category_title.boxed-link {
+	background:#000;
+}
+
+.post {
+	border-bottom:1px solid #cdcdcd;
+	margin-bottom:20px;
+	padding-bottom:20px;
+}
+
+.more-link {
+color:#990000;
+	font-size:1em;
+	float:right;
+	text-transform: none;
+	font-weight:500;
+}
+
+/* Cat page title */
+
+.category-title.style1 .category-header {
+	background-color:#fff !important;
+	text-align:left;
+	padding-left:0px !important;
+	border-bottom:1px solid #cdcdcd;
+}
+
+.category-title.style1 h1 {
+	text-transform: capitalize
+}
+
+
+
+/* 
+Article page styles
+*/
+
+.share-article-vertical .social {
+	color:#303030;
+}
+
+
+.featured_image_credit {
+	font-size:.85em;
+}
+
+@media only screen and (min-width:500px) {
+	article.post .post-bottom-meta {
+			font-size: 1em;
+			padding-bottom: 50px;
+	}
+}
+
+
+
+/* 
+Video post page styles
+*/
+
+.post .post-content.medium p {
+	font-size:1em;
+	line-height:150%;
+}
+
+.post-gallery.video-format-post, .post.blog-post.format-video {
+	background:#fff !important;
+	border-bottom:0px;
+}
+
+
+.other_videos {
+	border-top: 1.5px solid #000;
+	background:#fff;
+	margin:10px;
+}
+
+.post.video-others {
+	border-bottom:none !important;
+}
+
+
+/* 
+Adam Redesign 2020 styles end
+*/
+
+
+
+
+
+.header.style3 .logo .logolink {
+	padding: 0;
+}
+
+.cns-homepage-widget .widget_title > strong:nth-child(1) {	 	 
+  font-size: 20px;	 	 
+  color: #fff;	 	 
+  background-color: #990000;	 	 
+  text-align: center;	 	 
+  padding: 10px 0;	 	 
+  position: relative;	 	 
+  padding-left: 35%;	 	 
+}	 	 
+.cns-homepage-widget .widget_title > strong:nth-child(1)::after, .cns-homepage-widget .widget_title > strong:nth-child(1)::before {	 	 
+  top: 100%;	 	 
+  left: 50%;	 	 
+  border: solid transparent; 	 
+  content: " ";	 	 
+  height: 0;	 	 
+  width: 0;	 	 
+  position: absolute;	 	 
+  pointer-events: none;	 	 
+}	 	 
+.cns-homepage-widget .widget_title > strong:nth-child(1)::after {	 	 
+  border-color: rgba(194,225,245,0);	 	 
+  border-top-color: #990000;	 	 
+  border-width: 20px;	 	 
+  margin-left: -20px;	 	 
+}
+
+.cns-homepage-widget .widget .widget_title {	 	 
+	margin-bottom: 15px;
+}
+
+.cns-homepage-widget .widget .textwidget, .cns-homepage-widget .widget ul {	 	 
+  padding: 5px 15px 30px 15px;
+}
+
+.cns-homepage-widget .widget .post-category {	 	 
+  display: none;	 	 
+}	
+
+/* this fixes problem of youtube video being pushed down slightly on video pages, obscuring the play buttons after video is playing */	 	 
+.video-format-post .flex-video {	 	 
+ padding-top: 0;	 	 
+}
+
+/* Not sure if/where used; not used on home page (ATR) */
+.cns-homepage-cns-tv-title-box {	 	 
+ width: 100%;	 	 
+ background-color: #fcd603;	 	 
+ margin-bottom: 0;	 	 
+ height: 60px;	 	 
+}	 	 
+.cns-homepage-cns-tv-title-text {	 	 
+ color: #ffffff;	 	 
+ font-size: 50px;	 	 
+ font-weight: 600;	 	 
+ padding-left: 15px;	 	 
+ position: relative;	 	 
+ bottom: 5px;	 	 
+}	 	 
+.cns-homepage-main-channel .flex-video {	 	 
+ padding-top: 2px !important;	 	 
+}	 	 
+
+/*Begin Julz's Test Stuff*/	 
+.jh-testpage-sectionheaders {	 	 
+ font-size: 25px;	 	 
+ font-weight: 400;	 	 
+ padding-left: 10px;	 	 
+ padding-top: 10px;	 	 
+}	 	 
+.jh-testpage-postslider {	 	 
+ height: 20px;	 	 
+}	 	 
+/*End JULZ Test Stuff*/	 	 
+
+/*Begin Teresa Lo Test Stuff*/	 	 
+.tl-testpage-h1 {	 	 
+ font-family: didot;	 	 
+ text-transform: uppercase;	 	 
+ text-align: center;	 	 
+ color: #D92121;	 	 
+ font-size: 100px;	 	 
+/*border-bottom: #990000;*/	 	 
+}	 	 
+@media screen and (max-width: 800px) {	 	 
+ .tl-testpage-h1 {	 	 
+ font-size: 60px;	 	 
+ }	 	 
+}	 	 
+@media screen and (max-width: 600px) {	 	 
+ .tl-testpage-h1 {	 	 
+ font-size: 30px;	 	 
+ }	 	 
+}	 	 
+.discharging-trouble .post-category {	 	 
+ display: none !important;	 	 
+}	 	 
+.tl-testpage-h2 {	 	 
+ text-align: center;	 	 
+ text-transform: uppercase;	 	 
+ color: #990000;	 	 
+ background-color: #fcd603;	 	 
+ font-size: 13px;	 	 
+ padding: 10px;	 	 
+}	 	 
+.tl-testpage-q1 {	 	 
+ float: left;	 	 
+ position: fixed;	 	 
+ padding: 5px;	 	 
+ overflow: auto;	 	 
+ width: 180px;	 	 
+/*margin-top: 210px;*/	 	 
+}	 	 
+/*End Teresa Lo Test Stuff*/	 	 
+/*Start what we're reading widget*/	 	 
+.blocksummary {	 	 
+ background-color: #E4E4E4;	 	 
+/* i had to change the font family using html in the textbox because font-family: 'poppins'; didn't work here*/	 	 
+ font-size: 12px;	 	 
+ line-height: 100%;	 	 
+ padding: 10px;	 	 
+ margin-left: 15px;	 	 
+ margin-right: 15px;	 	 
+ margin-bottom: -25px;	 	 
+ margin-top: 35px;	 	 
+}	 	 
+.number {	 	 
+ color: #990000;	 	 
+ font-size: 65px;	 	 
+ padding-left: 25px;	 	 
+ margin-top: 25px;	 	 
+ margin-bottom: 20px;	 	 
+ overflow: hidden;	 	 
+ width: 100px;	 	 
+}	 	 
+.headline {	 	 
+ position: static;	 	 
+ font-size: 13px;	 	 
+ line-height: 120%;	 	 
+ padding-right: 25px;	 	 
+ margin-left: 70px;	 	 
+ margin-top: -95px;	 	 
+ overflow: hidden;	 	 
+}	 	 
+.headline2 {	 	 
+ position: static;	 	 
+ font-size: 13px;	 	 
+ line-height: 120%;	 	 
+ padding-right: 25px;	 	 
+ margin-left: 70px;	 	 
+ margin-top: -100px;	 	 
+ overflow: hidden;	 	 
+}	 	 
+.source {	 	 
+ position: static;	 	 
+ font-size: 10px;	 	 
+ text-transform: uppercase;	 	 
+ padding-right: 25px;	 	 
+ padding-top: 3px;	 	 
+ overflow: hidden;	 	 
+}	 	 
+/*just in case*/	 	 
+.headline img {	 	 
+ position: relative;	 	 
+ height: 60px;	 	 
+ padding-right: 10px;	 	 
+}	 	 
+.headline2 img {	 	 
+ position: relative;	 	 
+ height: 60px;	 	 
+ padding-right: 10px;	 	 
+}	 	 
+/*END what we're reading widget*/	 	 
+/*gravity forms*/	 	 
+.gfield_label {	 	 
+ text-transform: none !important;	 	 
+}	 	 
+li label {	 	 
+ text-transform: none !important;	 	 
+}	 	 
+
+/*Hiding "By" in most-shared post widget*/	 	 
+#thb_sharedimages_widget-2 .widget-byline, #thb_sharedimages_widget-4 .widget-byline, #thb_sharedimages_widget-3 .widget-byline {	 	 
+ display: none;	 	 
+}	 	 
+.columns aside.post-bottom-meta:nth-child(6), .columns aside.post-bottom-meta:nth-child(5) {	 	 
+ display: none;	 	 
+}	 	 
+/*Category page heading*/	 	 
+.category-title.style1 .category-header {	 	 
+ background-color: #fbd603;	 	 
+ padding: 15px 50px;	 	 
+} 	 	 
+.category-title.style1 h1 {	 	 
+ color: black;	 	 
+ font-size: 300%;	 	 
+} 	 	 
+.row.top-padding p {	 	 
+ padding: 0px 0px;	 	 
+}	 	 
+.author-page-excerpt p {	 	 
+ padding: 0px 0px !important;	 	 
+}	 	 
+ 	 	 
+@media screen and (max-width: 450px){	 	 
+ .category-title.style1 h1 {	 	 
+ font-size: 200%;	 	 
+ }	 	 
+}	 	 
+
+/*Fix caption on jetpack slideshow */	 	 
+.slideshow-slide-caption {	 	 
+ height: auto !important;	 	 
+}
+
+
+
+
+
+
+
+
+/* BUTTON CSS FOR BOARD OF ED PAGES */
+.button-49,
+.button-49:after {
+  width: 220px;
+  height: 65px;
+  font-size: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor:pointer;
+margin-bottom:15px;
+}
+
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.button-49:hover {
+  opacity: .7;
+}
+
+
+
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 200px;
+  }
+}

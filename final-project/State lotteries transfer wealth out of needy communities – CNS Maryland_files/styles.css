@@ -1,0 +1,186 @@
+.graphic-container {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* 
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    /* margin: auto; */
+    /* max-width: 100%; */
+    /* min-width: 440px; */
+    border-left: 1px solid black;
+    border-bottom: 14pt solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 5px 5px 10px gainsboro;
+}
+
+.graphic-title {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.graphic-title h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+
+.graphic-title h3 {
+    font-size: 14px;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.btn-group {
+    display: block;
+    text-align: center;
+}
+
+button {
+    min-width: 150px;
+    border: none;
+    min-width: 150px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0.5;
+}
+
+button:hover {
+    transform: scale(1.25);
+    /* opacity: 1; */
+
+}
+
+.active {
+    opacity: 1;
+}
+
+
+.result {
+    display: flex;
+    width: 100%;
+}
+
+.text-box {
+    width: 50%;
+}
+
+.map-box {
+    width: 50%;
+}
+
+#map {
+    /* border: 2px solid black; */
+}
+
+img {
+    height: 72px;
+}
+
+#info {
+    background-color: #e9e8ea;
+}
+
+#store-info h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#store-info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#divider-line hr {
+    border: 2px solid #0a0a0a;
+    opacity: 0.25;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px "Poppins", sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.text {
+    padding: 20px;
+}
+
+.inner-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 500px;
+}
+
+.legend {
+    text-align: left;
+    line-height: 18px;
+    color: #555;
+}
+
+.legend-horizontal>div {
+    display: inline-block;
+}
+
+.legend .legend-box {
+    width: 80px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.legend .legend-value {
+    display: inline-block;
+    margin: -1px 8px 5px 5px;
+    vertical-align: top;
+}
+
+.legend .x {
+    display: none;
+}
+
+.legend .y {
+    background-image: linear-gradient(to right, #e9e8ea, #990000);
+    opacity: 0.7;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+    .result {
+        display: block;
+        width: 100%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .map-box {
+        height: 500px;
+    }
+
+    .inner-container {
+        margin: 5px;
+        height: 100%;
+    }
+
+}
