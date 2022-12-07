@@ -111,48 +111,6 @@ $font-size: 140px;
     white-space: pre;
     width: $font-size / 1.75;
   }
-  
-  // tens
-  &::before {
-    content: "0 \a 1 \a 2 \a 3 \a 4 \a 5";
-    left: 10px;
-    animation: count_tens 60s linear infinite;
-  }
-
-  // ones
-  &::after {
-    content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
-    right: 10px;
-    animation: count_secs 10s linear infinite;
-  }
-}
-
-@keyframes count_tens {
-  @for $i from 0 through 5 {
-    $r: $i/6;
-    #{$r*100%} { transform: translateY($i*$font-size*-1); }
-    #{$r*100% + 16.666%} { transform: translateY($i*$font-size*-1); }
-  }
-} 
-
-@keyframes count_secs {
-  @for $i from 0 through 9 {
-    $r: $i/10;
-    #{$r*100%} { transform: translateY($i*$font-size*-1); }
-    #{$r*100% + 9.999%} { transform: translateY($i*$font-size*-1); }
-  }
-} 
-
-
-// potentially add ticking using the loop below
-@keyframes counter {
-  @for $i from 0 through 100 {
-    $r: $i/60;
-    #{$r*100%} { transform: translateY($r*-100%); }
-    #{$r*100%+0.5} { transform: translateY($r*-100%); }
-  }
-}
-    
     
 /* end of counter styles */     
     
