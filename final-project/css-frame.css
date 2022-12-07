@@ -7,7 +7,7 @@
     }
     
     h1 {
-        font-size: 50px;
+        font-size: 52px;
          font-family: 'Archivo', sans-serif;
     }
     
@@ -23,6 +23,11 @@
         font-size: 25px;
         font-weight: bold;
         font-family: 'Archivo', sans-serif;
+    }
+    
+    .headline-line {
+        width: 100%;
+        color: red;
     }
     
     .leadimage {
@@ -62,7 +67,95 @@
     #credit {
         color: grey
     }
+    
+    #end-note {
+        font-family: 'Merriweather', serif;
+        font-style: italic;
+    }
 
+    #footer {
+    background-color: black;
+    color: white;
+    font-size: 15px
+    padding: 10px 0px 10px 10px;
+    font-family: 'Merriweather', serif;
+}
+
+/* Number counter styles */
+    
+    h5 {
+        margin: 0;
+  font-size: 1.4em;
+  text-align: center;
+    }
+    
+    .number-container {
+        width: 50%;
+        margin: 4em auto;
+}
+
+$font-size: 140px;
+
+#counter {
+  height: auto; width: 180px;
+  overflow: hidden;
+  position: relative;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin: 70px auto;
+  display: block;
+  
+  &::before, &::after {
+    position: absolute;
+    white-space: pre;
+    width: $font-size / 1.75;
+  }
+  
+  // tens
+  &::before {
+    content: "0 \a 1 \a 2 \a 3 \a 4 \a 5";
+    left: 10px;
+    animation: count_tens 60s linear infinite;
+  }
+
+  // ones
+  &::after {
+    content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+    right: 10px;
+    animation: count_secs 10s linear infinite;
+  }
+}
+
+@keyframes count_tens {
+  @for $i from 0 through 5 {
+    $r: $i/6;
+    #{$r*100%} { transform: translateY($i*$font-size*-1); }
+    #{$r*100% + 16.666%} { transform: translateY($i*$font-size*-1); }
+  }
+} 
+
+@keyframes count_secs {
+  @for $i from 0 through 9 {
+    $r: $i/10;
+    #{$r*100%} { transform: translateY($i*$font-size*-1); }
+    #{$r*100% + 9.999%} { transform: translateY($i*$font-size*-1); }
+  }
+} 
+
+
+// potentially add ticking using the loop below
+@keyframes counter {
+  @for $i from 0 through 100 {
+    $r: $i/60;
+    #{$r*100%} { transform: translateY($r*-100%); }
+    #{$r*100%+0.5} { transform: translateY($r*-100%); }
+  }
+}
+    
+    
+/* end of counter styles */     
+    
     
     
 @media (min-width: 576px) {
