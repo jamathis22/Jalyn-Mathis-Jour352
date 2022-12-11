@@ -25,6 +25,11 @@
         font-family: 'Archivo', sans-serif;
     }
     
+    h5 {
+        text-align: center;
+    }
+    
+    
     .headline-line {
         width: 100%;
         color: red;
@@ -79,42 +84,8 @@
     font-size: 15px
     padding: 10px 0px 10px 10px;
     font-family: 'Merriweather', serif;
-}
-
-/* Number counter styles */
-    
-    h5 {
-        margin: 0;
-  font-size: 1.4em;
-  text-align: center;
-    }
-    
-    .number-container {
-        width: 50%;
-        margin: 4em auto;
-}
-
-$font-size: 140px;
-
-#counter {
-  height: auto; width: 180px;
-  overflow: hidden;
-  position: relative;
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
-  margin: 70px auto;
-  display: block;
-  
-  &::before, &::after {
-    position: absolute;
-    white-space: pre;
-    width: $font-size / 1.75;
-  }
-    
-/* end of counter styles */     
-    
-    
+}     
+       
     
 @media (min-width: 576px) {
     /*Tablet-only styles here*/
