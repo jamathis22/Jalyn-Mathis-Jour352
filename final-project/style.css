@@ -81,23 +81,40 @@
     #footer {
     background-color: black;
     color: white;
-    font-size: 15px
+    font-size: 15px;
     padding: 10px 0px 10px 10px;
     font-family: 'Merriweather', serif;
-}     
-       
+    }
+    
+    .lotterymap {
+        height: 2220px
+    }
+}
+
     
 @media (min-width: 576px) {
     /*Tablet-only styles here*/
     /*This media query targets any screen that is at least 576px wide (but smaller than 992px wide (see below)*/
+    
+    .lotterymap {
+        height: 1980px
+    }
 }
 
 @media (min-width: 992px) {
     /*Desktop-only styles here*/
     /*This media query targets any screen that is at least 992px wide*/
+    
+    .lotterymap {
+        height: 1260px
+    }
 }
 
 @media (min-width: 1200px) {
     /*Large-Desktop-only styles here*/
     /*This media query targets any screen that is at least 1200px wide*/
+    
+    .lotterymap {
+        height: 1260px
+    }
 }
